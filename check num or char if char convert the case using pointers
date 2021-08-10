@@ -1,0 +1,17 @@
+//check whether the given input is number or text if text the letter is upper or lower
+
+#include<stdio.h>
+void main()
+{
+    char ch, *pch = &ch;
+    printf("\n Enter a Character: ");
+    scanf("%c", pch);
+    if(*pch >= 'A' && *pch <= 'Z')
+       printf("\n Upper case character was entered.");
+    else if(*pch >= 'a' && *pch <= 'z')
+       printf("\n Lower case character was entered.");
+    else if(*pch>='0' && *pch<='9')
+       printf("\n You entered a number.");
+    else
+       printf("\n you entered special character.");
+}
